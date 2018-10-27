@@ -12,6 +12,7 @@ using System.Reflection;
 using System.IO;
 using Rhino.Runtime.InProcess;
 using System.Diagnostics;
+using SAP2000v20;
 
 namespace RhinoInside.SAP.Sphere
 {
@@ -30,15 +31,15 @@ namespace RhinoInside.SAP.Sphere
 
                 AppDomain.CurrentDomain.AssemblyResolve -= OnRhinoCommonResolve;
 
-                //string rhinoSystemDir = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles), "Rhino WIP", "System");
-                string rhinoSystemDir = @"C:\Users\EErtugrul\Desktop\Rhino WIP\System";
+                string rhinoSystemDir = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles), "Rhino WIP", "System");
+                //string rhinoSystemDir = @"C:\Users\EErtugrul\Desktop\Rhino WIP\System";
                 return Assembly.LoadFrom(Path.Combine(rhinoSystemDir, rhinoCommonAssemblyName + ".dll"));
             };
         }
 
         private static RhinoCore rhinoCore;
 
-        public void Main()
+        public void Main(ref cSapModel Model)
         {
             if (rhinoCore == null)
             {             // Load Rhino
@@ -71,6 +72,24 @@ namespace RhinoInside.SAP.Sphere
                     Point3f d;
 
                     mesh.Faces.GetFaceVertices(i, out a, out b, out c, out d);
+
+                    List<Point3f> vertices = new List<Point3f>();
+                    vertices.Add(a); vertices.Add(b); vertices.Add(c);
+                    if (c != d) vertices.Add(d);
+
+                    List<string> points = new List<string>();
+
+                    foreach (var v in vertices)
+                    {
+                        string p = string.Empty;
+                        Model.PointObj.AddCartesian(v.X, v.Y, v.Z, ref p);
+                        points.Add(p);
+                    }
+
+                    string area = string.Empty;
+                    string[] pts = points.ToArray();
+                    Model.AreaObj.AddByPoint(points.Count, ref pts, ref area);
+
                 }
 
             }

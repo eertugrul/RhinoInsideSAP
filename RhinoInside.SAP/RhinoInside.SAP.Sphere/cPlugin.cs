@@ -27,7 +27,7 @@ namespace RhinoInside.SAP.Sphere
             {
 
                 var t = new Test1();
-                t.Main();
+                t.Main(ref Model);
 
             }
             catch (Exception e)

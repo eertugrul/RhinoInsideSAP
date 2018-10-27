@@ -31,8 +31,8 @@ namespace RhinoInside.ETABS.Sphere
 
                 AppDomain.CurrentDomain.AssemblyResolve -= OnRhinoCommonResolve;
 
-                //string rhinoSystemDir = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles), "Rhino WIP", "System");
-                string rhinoSystemDir = @"C:\Users\EErtugrul\Desktop\Rhino WIP\System";
+                string rhinoSystemDir = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles), "Rhino WIP", "System");
+                //string rhinoSystemDir = @"C:\Users\EErtugrul\Desktop\Rhino WIP\System";
                 return Assembly.LoadFrom(Path.Combine(rhinoSystemDir, rhinoCommonAssemblyName + ".dll"));
             };
         }
@@ -54,7 +54,6 @@ namespace RhinoInside.ETABS.Sphere
                     return;
                 }
             }
-
 
             // RhinoCommon code
             var sphere = new Rhino.Geometry.Sphere(Point3d.Origin, 12000);
