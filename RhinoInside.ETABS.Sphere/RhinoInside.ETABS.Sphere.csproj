@@ -4,14 +4,13 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F074AAC7-EF39-46A9-8A06-785A8774EC3D}</ProjectGuid>
+    <ProjectGuid>{1A763C43-D014-45AE-86A0-6B049091C671}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RhinoInside.SAP.Sphere</RootNamespace>
-    <AssemblyName>RhinoInside.SAP.Sphere</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <RootNamespace>RhinoInside.ETABS.Sphere</RootNamespace>
+    <AssemblyName>RhinoInside.ETABS.Sphere</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -31,13 +30,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="RhinoCommon, Version=6.5.18155.13161, Culture=neutral, PublicKeyToken=552281e97c755530, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\Desktop\Rhino WIP\System\RhinoCommon.dll</HintPath>
+    <Reference Include="ETABSv17">
+      <HintPath>..\..\..\..\..\..\Program Files\Computers and Structures\ETABS 17\ETABSv17.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="SAP2000v20">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Computers and Structures\SAP2000 20\SAP2000v20.dll</HintPath>
+    <Reference Include="RhinoCommon">
+      <HintPath>..\..\..\..\Desktop\Rhino WIP\System\RhinoCommon.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

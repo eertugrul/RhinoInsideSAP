@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RhinoInside.SAP", "RhinoIns
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RhinoInside.SAP.Sphere", "RhinoInside.SAP.Sphere\RhinoInside.SAP.Sphere.csproj", "{F074AAC7-EF39-46A9-8A06-785A8774EC3D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RhinoInside.ETABS.Sphere", "..\RhinoInside.ETABS.Sphere\RhinoInside.ETABS.Sphere.csproj", "{1A763C43-D014-45AE-86A0-6B049091C671}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F074AAC7-EF39-46A9-8A06-785A8774EC3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F074AAC7-EF39-46A9-8A06-785A8774EC3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F074AAC7-EF39-46A9-8A06-785A8774EC3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A763C43-D014-45AE-86A0-6B049091C671}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A763C43-D014-45AE-86A0-6B049091C671}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A763C43-D014-45AE-86A0-6B049091C671}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A763C43-D014-45AE-86A0-6B049091C671}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
