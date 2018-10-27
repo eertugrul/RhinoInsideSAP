@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RhinoInside.SAP", "RhinoInside.SAP\RhinoInside.SAP.csproj", "{13193E88-6520-476F-B507-6ED77F48F487}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RhinoInside.SAP.Sphere", "RhinoInside.SAP.Sphere\RhinoInside.SAP.Sphere.csproj", "{F074AAC7-EF39-46A9-8A06-785A8774EC3D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13193E88-6520-476F-B507-6ED77F48F487}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13193E88-6520-476F-B507-6ED77F48F487}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13193E88-6520-476F-B507-6ED77F48F487}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13193E88-6520-476F-B507-6ED77F48F487}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F074AAC7-EF39-46A9-8A06-785A8774EC3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F074AAC7-EF39-46A9-8A06-785A8774EC3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F074AAC7-EF39-46A9-8A06-785A8774EC3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F074AAC7-EF39-46A9-8A06-785A8774EC3D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
